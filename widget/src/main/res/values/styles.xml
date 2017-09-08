@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--<style name="AnimBottom" parent="@android:style/Animation">-->
+        <!--<item name="android:windowEnterAnimation">@anim/push_bottom_in</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/push_bottom_out</item>-->
+    <!--</style>-->
+    <!--<style name="AnimAlert" parent="@android:style/Animation">-->
+        <!--<item name="android:windowEnterAnimation">@anim/push_bottom_in</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/push_bottom_out</item>-->
+    <!--</style>-->
+
+    <style name="AlertActivity_AlertStyle" parent="android:Theme.Dialog">
+        <!--<item name="android:windowAnimationStyle">@style/AnimAlert</item>-->
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MIS_NO_ACTIONBAR" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+
+	
+	
+	<!--MD dialog-->
+	<style name="MD_Light" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="md_divider">@color/md_divider_black</item>
+    <item name="md_list_selector">@drawable/md_selector</item>
+    <item name="md_btn_stacked_selector">@drawable/md_selector</item>
+    <item name="md_btn_positive_selector">@drawable/md_btn_selector</item>
+    <item name="md_btn_neutral_selector">@drawable/md_btn_selector</item>
+    <item name="md_btn_negative_selector">@drawable/md_btn_selector</item>
+
+    <item name="android:windowAnimationStyle">@style/MD_WindowAnimation</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+
+  <style name="MD_Dark" parent="Theme.AppCompat.Dialog.Alert">
+    <item name="md_divider">@color/md_divider_white</item>
+    <item name="md_list_selector">@drawable/md_selector_dark</item>
+    <item name="md_btn_stacked_selector">@drawable/md_selector_dark</item>
+    <item name="md_btn_positive_selector">@drawable/md_btn_selector_dark</item>
+    <item name="md_btn_neutral_selector">@drawable/md_btn_selector_dark</item>
+    <item name="md_btn_negative_selector">@drawable/md_btn_selector_dark</item>
+
+    <item name="android:windowAnimationStyle">@style/MD_WindowAnimation</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+
+  <style name="MD_ActionButtonStacked" parent="@style/MD_ActionButton" tools:ignore="NewApi">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:paddingLeft">@dimen/md_button_padding_horizontal_internalexternal</item>
+    <item name="android:paddingStart">@dimen/md_button_padding_horizontal_internalexternal
+    </item>
+    <item name="android:paddingRight">@dimen/md_button_padding_horizontal_internalexternal
+    </item>
+    <item name="android:paddingEnd">@dimen/md_button_padding_horizontal_internalexternal</item>
+  </style>
+
+  <style name="MD_ActionButton">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/md_button_height</item>
+    <item name="android:layout_gravity">center_vertical</item>
+  </style>
+
+  <style name="MD_ActionButton.Text" tools:ignore="NewApi">
+    <item name="android:textSize">@dimen/md_button_textsize</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:gravity">center</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="android:background">@null</item>
+    <item name="android:minWidth">@dimen/md_button_min_width</item>
+    <item name="android:paddingLeft">@dimen/md_button_textpadding_horizontal</item>
+    <item name="android:paddingRight">@dimen/md_button_textpadding_horizontal</item>
+  </style>
+
+  <style name="MD_WindowAnimation">
+    <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+    <item name="android:windowExitAnimation">@anim/popup_exit</item>
+  </style>
+
+    <style name="Animation">
+        <item name="android:windowEnterAnimation">@anim/hot_pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/hot_pop_out</item>
+    </style>
+  
+  <!--md dialog end-->
+
+
+
+    <!--actionSheetDialog-->
+    <style name="ActionSheetDialogBase">
+        <item name="titleTextColor">#d4000000</item>
+        <item name="titleTextSize">20dp</item>
+        <item name="titleHeight">42dp</item>
+        <item name="titleDivider">@drawable/divider_bg</item>
+        <item name="titleDividerInset">18dp</item>
+        <item name="titleDividerHeight">1px</item>
+        <item name="messageTextColor">#73000000</item>
+        <item name="messageTextSize">12sp</item>
+        <item name="messageHeight">42dp</item>
+        <item name="messageDivider">@drawable/divider_bg</item>
+        <item name="messageDividerInset">18dp</item>
+        <item name="messageDividerHeight">1px</item>
+        <item name="itemTextColor">#00beb4</item>
+        <item name="itemTextSize">15sp</item>
+        <item name="itemDivider">@drawable/divider_bg</item>
+        <item name="itemDividerInset">18dp</item>
+        <item name="itemDividerHeight">1px</item>
+        <item name="itemHeight">48dp</item>
+        <item name="positiveTextColor">#de2b2b</item>
+        <item name="positiveTextSize">15sp</item>
+        <item name="positiveHeight">48dp</item>
+        <item name="cancelTextColor">#00beb4</item>
+        <item name="cancelTextSize">15sp</item>
+        <item name="cancelHeight">48dp</item>
+        <item name="cancelTopMargins">8dp</item>
+        <item name="cancelBackground">@drawable/radios</item>
+        <item name="sheetMargins">8dp</item>
+        <item name="contentBackground">@drawable/radios</item>
+        <item name="windowAnimations">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/action_sheet_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/action_sheet_dialog_exit</item>
+    </style>
+
+
+
+    <style name="ActionSheetTextBase">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ActionSheetTextBase.Title">
+
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#d4000000</item>
+    </style>
+    <style name="ActionSheetTextBase.Message">
+        <item name="android:minHeight">42dp</item>
+        <item name="android:textColor">#73000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="ActionSheetTextBase.Content">
+
+    </style>
+    <style name="ActionSheetTextBase.Cancel">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#00beb4</item>
+        <item name="android:text">取消</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@drawable/radios</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <!--actionSheetDialog-->
+
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+</resources>
